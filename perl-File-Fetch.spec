@@ -11,9 +11,7 @@ License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:  perl-devel
-%endif
+Buildrequires:  perl-version
 Buildrequires:  perl(IPC::Cmd)
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
