@@ -14,6 +14,7 @@ Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.
 Buildrequires:  perl-version
 Buildrequires:  perl(IPC::Cmd)
 Buildarch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 File::Fetch is a generic file fetching mechanism.
