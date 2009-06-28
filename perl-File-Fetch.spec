@@ -1,6 +1,6 @@
 %define module  File-Fetch
 %define name    perl-%{module}
-%define version 0.18
+%define version 0.20
 %define release %mkrel 1
 
 Name:           %{name}
