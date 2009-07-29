@@ -1,20 +1,20 @@
-%define module  File-Fetch
-%define name    perl-%{module}
-%define version 0.20
-%define release %mkrel 1
+%define upstream_name    File-Fetch
+%define upstream_version 0.20
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        A generic file fetching mechanism
-License:        GPL or Artistic
-Group:          Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    A generic file fetching mechanism
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.bz2
+
 Buildrequires:  perl-version
 Buildrequires:  perl(IPC::Cmd) >= 0.42
 Buildarch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 File::Fetch is a generic file fetching mechanism.
@@ -23,7 +23,7 @@ It allows you to fetch any file pointed to by a ftp, http, file, or rsync uri
 by a number of different means.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -44,5 +44,3 @@ rm -rf %{buildroot}
 %doc README CHANGES
 %{perl_vendorlib}/File
 %{_mandir}/*/*
-
-
