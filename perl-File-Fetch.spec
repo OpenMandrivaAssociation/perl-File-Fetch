@@ -12,7 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.bz2
 
 Buildrequires:  perl-version
-Buildrequires:  perl(IPC::Cmd) >= 0.42
+Buildrequires:  perl(IPC::Cmd) >= 0.420.0
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
