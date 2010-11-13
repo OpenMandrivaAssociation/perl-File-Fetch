@@ -1,5 +1,5 @@
 %define upstream_name    File-Fetch
-%define upstream_version 0.24
+%define upstream_version 0.28
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
