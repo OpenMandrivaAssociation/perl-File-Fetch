@@ -1,15 +1,15 @@
 %define upstream_name    File-Fetch
-%define upstream_version 0.28
+%define upstream_version 0.42
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.42
+Release:	1
 
 Summary:	A generic file fetching mechanism
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-Fetch-0.42.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-version
@@ -108,4 +108,5 @@ make test
 
 * Mon Apr 24 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.07-1mdk
 - first mdk release
+
 
