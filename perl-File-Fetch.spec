@@ -2,14 +2,14 @@
 %define upstream_version 0.42
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.42
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	A generic file fetching mechanism
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-Fetch-0.42.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-Fetch-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-version
