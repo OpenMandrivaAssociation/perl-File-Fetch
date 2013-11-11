@@ -1,5 +1,5 @@
 %define upstream_name    File-Fetch
-%define upstream_version 0.42
+%define upstream_version 0.44
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -108,5 +108,6 @@ make test
 
 * Mon Apr 24 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.07-1mdk
 - first mdk release
+
 
 
